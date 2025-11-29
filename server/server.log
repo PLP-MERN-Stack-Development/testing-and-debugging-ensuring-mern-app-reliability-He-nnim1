@@ -1,0 +1,8 @@
+﻿
+> server@1.0.0 start
+> node ./src/index.js
+
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-11-29T18:47:37.833Z"}
+{"level":"info","message":"Server listening on port 5000","timestamp":"2025-11-29T18:47:37.846Z"}
+{"level":"info","message":"GET /api/posts","timestamp":"2025-11-29T18:48:12.260Z"}
+{"level":"info","message":"GET /api/posts/invalid-id","timestamp":"2025-11-29T18:48:12.465Z"}

@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest --runInBand --selectProjects server",
+    "test:unit": "jest --selectProjects server --testPathPattern=server/tests/unit",
+    "test:integration": "jest --selectProjects server --testPathPattern=server/tests/integration",
+    "setup-test-db": "node ./tests/setup-db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mern-testing-root": "file:..",
+    "mongoose": "^9.0.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^8.11.0",
+    "supertest": "^6.3.3",
+    "winston": "^3.8.2"
+  }
+}
